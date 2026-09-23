@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Khushi Kumari</title>
+  <meta name="description" content="Data analysis projects by Khushi Kumari — Power BI dashboards, SQL analysis, and more." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="site-nav" role="banner">
+    <nav class="nav-inner" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo" aria-label="Home">K<span>.</span>K</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="mobile-overlay" class="nav-mobile-overlay" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="t-eyebrow">Portfolio</span>
+          <h1 class="t-heading" id="projects-heading">Selected Projects</h1>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="t-sub" style="margin-top: 1rem; max-width: 560px;">
+            A mix of professional internship work and self-driven analyses —
+            each one built to answer a real question with real data.
+          </p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1 — Regular card -->
+          <article class="project-card">
+            <div class="card-img-wrap">
+              <!-- Replace with: <img src="images/churn.jpg" alt="Customer Churn Analysis dashboard" /> -->
+              <img src="images/img1.png" alt="Customer Churn Analysis — SQL" />
+            </div>
+            <div class="card-body">
+              <p class="card-category">SQL Analysis</p>
+              <h2 class="card-title">Customer Churn Analysis</h2>
+              <p class="card-desc">
+                Queried 1,000+ customer records using advanced SQL — joins, CTEs,
+                and window functions — to surface a 58% churn rate and identify
+                ~57% of total revenue at risk. Delivered a prioritised list of
+                at-risk customer segments ready for immediate retention action.
+              </p>
+              <ul class="card-tags" aria-label="Technologies used">
+                <li><span class="tag">SQL</span></li>
+                <li><span class="tag">MySQL Workbench</span></li>
+                <li><span class="tag">CTEs</span></li>
+                <li><span class="tag">Window Functions</span></li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/KhushiKumari-27" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 — Regular card -->
+          <article class="project-card">
+            <div class="card-img-wrap">
+              <!-- Replace with: <img src="images/img2.jpg" alt="Student Productivity Dashboard" /> -->
+              <img src="images/img2.png" alt="Student Productivity Power BI Dashboard" />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Power BI Dashboard</p>
+              <h2 class="card-title">Student Productivity Analysis</h2>
+              <p class="card-desc">
+                Built an interactive Power BI dashboard analysing daily student
+                activity patterns across multiple variables. Found that 65%+ of
+                days were logged as low-productivity, with screen time above
+                6 hours as the single strongest predictor — a finding directly
+                actionable for behaviour and schedule recommendations.
+              </p>
+              <ul class="card-tags" aria-label="Technologies used">
+                <li><span class="tag">Power BI</span></li>
+                <li><span class="tag">DAX</span></li>
+                <li><span class="tag">Power Query</span></li>
+                <li><span class="tag">Data Visualisation</span></li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/KhushiKumari-27" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 — Featured wide card (Tata Steel internship) -->
+          <article class="project-card">
+            <div class="card-img-wrap">
+              <!-- Replace with: <img src="images/img3.jpg" alt="Tata Steel Power BI Dashboard" /> -->
+              <img src="images/img3.png" alt="Tata Steel White Rust RCA Power BI Dashboard" />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Internship Project &nbsp;·&nbsp; Tata Steel</p>
+              <h2 class="card-title">Industrial Dispatch &amp; White Rust RCA Dashboard</h2>
+              <p class="card-desc">
+                My first professional data project — built during a 4-week Data
+                Analytics internship at Tata Steel, July 2026. Cleaned and
+                profiled a masked industrial dispatch dataset, resolving missing
+                values, duplicate columns, and inconsistencies across 6+ operational
+                fields to make it analysis-ready.
+                <br /><br />
+                Designed and built an interactive Power BI dashboard converting raw
+                dispatch, freight, transit-time, and material-distribution data into
+                a self-explanatory view for first-time stakeholders. Extended it into
+                a White Rust Root Cause Analysis (RCA) support tool, tracking KPIs
+                across plants, transporters, and destinations for the investigation
+                team. Presented findings directly to the project guide across two
+                rounds of feedback — and saw the dashboard adopted by the team.
+              </p>
+              <ul class="card-tags" aria-label="Technologies used">
+                <li><span class="tag">Power BI</span></li>
+                <li><span class="tag">DAX</span></li>
+                <li><span class="tag">Power Query</span></li>
+                <li><span class="tag">Data Cleaning</span></li>
+                <li><span class="tag">Root Cause Analysis</span></li>
+                <li><span class="tag">Stakeholder Reporting</span></li>
+              </ul>
+              <div class="card-links">
+                <a href="https://github.com/KhushiKumari-27" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 — Placeholder for upcoming project -->
+          <article class="project-card">
+            <div class="card-img-wrap">
+              <img src="images/img4.png" alt="Upcoming Python EDA project" />
+            </div>
+            <div class="card-body">
+              <p class="card-category">Streamlit Web app </p>
+              <h2 class="card-title">Volt & Vogue executive review panel</h2>
+              <p class="card-desc">
+                Built entirely with Python, Pandas, Streamlit, and Plotly Express, this interactive web application bridges data manipulation with professional, executive-facing UI design.
+              </p>
+              <ul class="card-tags" aria-label="Technologies planned">
+                <li><span class="tag">Python</span></li>
+                <li><span class="tag">Pandas</span></li>
+                <li><span class="tag">Streamlit</span></li>
+                <li><span class="tag">Plotly express</span></li>
+              </ul>
+              <div class="card-links">
+                <a href="https://volt-vogue-sales-dashboard-7ms2e8pdxjyhx5rv5cthjz.streamlit.app/" target="_blank" rel="noopener noreferrer">Live Application↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--tinted" aria-label="Collaboration invitation">
+      <div class="container" style="text-align: center; max-width: 580px;">
+        <span class="t-eyebrow" style="display: block; margin-bottom: 1rem;">Have a data challenge?</span>
+        <h2 class="t-heading" style="margin-bottom: 1.5rem;">Let's turn your data into decisions.</h2>
+        <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Khushi Kumari. Crafted with intention.</p>
+        <nav class="footer-socials" aria-label="Social links">
+          <a href="mailto:Khushi27092006@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/khushi-kumari-88a933323/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/KhushiKumari-27" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Khushi Kumari</title>
+  <meta name="description" content="Get in touch with Khushi Kumari — open to data analyst internships and analytics opportunities." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .contact-hero { max-width: 640px; }
+
+    .contact-hero .t-display {
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      margin-bottom: var(--space-sm);
+    }
+
+    .contact-hero p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      margin-bottom: var(--space-lg);
+      max-width: 480px;
+    }
+
+    .avail-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #EEE0CE;
+      border: 1px solid var(--tan);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--mocha);
+      margin-bottom: var(--space-md);
+      text-decoration: none;
+    }
+
+    .avail-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background-color: #b07d55;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .avail-dot::after {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background-color: #b07d55;
+      opacity: 0.35;
+      animation: avail-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes avail-pulse {
+      0%, 100% { transform: scale(1);   opacity: 0.35; }
+      50%       { transform: scale(1.8); opacity: 0;    }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .avail-dot::after { animation: none; }
+    }
+
+    .channels-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-sm);
+      margin-top: var(--space-lg);
+    }
+
+    .channel-card {
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: var(--space-md);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+      text-decoration: none;
+      color: inherit;
+      background-color: var(--bg-card);
+      transition: border-color var(--dur) var(--ease),
+                  transform var(--dur) var(--ease),
+                  box-shadow var(--dur) var(--ease);
+    }
+
+    .channel-card:hover {
+      border-color: var(--caramel);
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(61, 43, 26, 0.09);
+    }
+
+    .channel-card-icon { font-size: 1.4rem; margin-bottom: 0.2rem; }
+
+    .channel-card-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .channel-card-value {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--mocha);
+      word-break: break-all;
+    }
+
+    .channel-card-action {
+      font-size: 0.78rem;
+      color: var(--caramel);
+      font-weight: 500;
+      margin-top: auto;
+      padding-top: var(--space-xs);
+    }
+
+    .opps-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: var(--space-sm);
+    }
+
+    .opp-tag {
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      background-color: var(--bg-card);
+    }
+
+    @media (max-width: 700px) {
+      .channels-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <header id="site-nav" role="banner">
+    <nav class="nav-inner" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo" aria-label="Home">K<span>.</span>K</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-overlay">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="mobile-overlay" class="nav-mobile-overlay" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hero">
+
+          <div class="avail-pill" role="status" aria-label="Currently available for opportunities">
+            <span class="avail-dot" aria-hidden="true"></span>
+            Available for Internships &amp; Opportunities
+          </div>
+
+          <h1 class="t-display" id="contact-heading">
+            Let's work<br /><em style="color: var(--caramel); font-style: italic;">together.</em>
+          </h1>
+
+          <p>
+            I'm Khushi — a final-year BCA student from Jamshedpur actively looking
+            for data analyst internships where I can contribute real analytical work
+            from day one. If you think there's a fit, or just want to talk data,
+            I'd love to hear from you.
+          </p>
+
+          <div>
+            <span class="t-eyebrow" style="display: block; margin-bottom: 0.6rem;">Open to</span>
+            <div class="opps-row" role="list" aria-label="Types of opportunities">
+              <span class="opp-tag" role="listitem">Data Analyst Internship</span>
+              <span class="opp-tag" role="listitem">Business Analyst Internship</span>
+              <span class="opp-tag" role="listitem">Freelance Data Projects</span>
+              <span class="opp-tag" role="listitem">Remote &amp; On-site</span>
+              <span class="opp-tag" role="listitem">Full-time (2027)</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Channel cards -->
+        <div class="channels-grid" role="list" aria-label="Direct contact channels">
+
+          <a href="mailto:Khushi27092006@gmail.com" class="channel-card" role="listitem" aria-label="Send Khushi an email">
+            <span class="channel-card-icon" aria-hidden="true">✉️</span>
+            <span class="channel-card-label">Email — fastest response</span>
+            <span class="channel-card-value">Khushi27092006@gmail.com</span>
+            <span class="channel-card-action">Open email app →</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/khushi-kumari-88a933323/" target="_blank" rel="noopener noreferrer" class="channel-card" role="listitem" aria-label="Visit Khushi's LinkedIn profile">
+            <span class="channel-card-icon" aria-hidden="true">💼</span>
+            <span class="channel-card-label">LinkedIn</span>
+            <span class="channel-card-value">khushi-kumari-88a933323</span>
+            <span class="channel-card-action">View profile →</span>
+          </a>
+
+          <a href="https://github.com/KhushiKumari-27" target="_blank" rel="noopener noreferrer" class="channel-card" role="listitem" aria-label="Visit Khushi's GitHub profile">
+            <span class="channel-card-icon" aria-hidden="true">🐙</span>
+            <span class="channel-card-label">GitHub</span>
+            <span class="channel-card-value">KhushiKumari-27</span>
+            <span class="channel-card-action">See my work →</span>
+          </a>
+
+        </div>
+
+        <!-- CV nudge -->
+        <div style="margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <p class="t-eyebrow" style="margin-bottom: 0.3rem;">Prefer a document?</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">My CV has my full experience, education, and skills in one place.</p>
+          </div>
+          <!-- Replace # with your actual CV file path once uploaded -->
+          <a href="Khushi_Kumari_CV.pdf" download class="btn btn-outline" aria-label="Download Khushi's CV as PDF">
+            Download CV &nbsp;↓
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Khushi Kumari. Crafted with intention.</p>
+        <nav class="footer-socials" aria-label="Social links">
+          <a href="mailto:Khushi27092006@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/khushi-kumari-88a933323/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/KhushiKumari-27" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
